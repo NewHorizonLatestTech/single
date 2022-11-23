@@ -1,0 +1,159 @@
+ /* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+            
+.body {
+    height: 200vh;
+    width: 100vw;
+    padding: 2rem;
+}
+.parent-box{
+
+    position:relative;
+
+    width: 500px;
+    height: 1000px;
+    background: #272727;
+    padding: 2rem;
+}
+.child-box-1{
+
+    width: 250px;
+    height: 250px;
+    background: #ff6525;
+}
+.child-box-2{
+    position: sticky;
+    top: 0;
+    width: 250px;
+    height: 250px;
+    background: #14a76c;
+
+}
+h1{
+    /* color: rgb(158, 62, 62); */
+/* }  */
+*{
+    margin: 1;
+    padding: 1px;;
+    box-sizing:content-box;
+}
+body{
+    font-family: monterrat ,sans-serif;
+    background: #09131b;
+    color: #ffffff;
+    max-height: 100vh;
+}
+.header{
+    background: #660cd4;
+    position: relative;
+    max-width:100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding:0rem 2rem;
+    z-index: 1;
+}
+.header a{
+ text-decoration: none;
+ color: #ffffff;
+}
+.header ul{
+    list-style: none;
+}
+
+.logo{
+    font-size: 2rem;
+} 
+.menu-items{
+    display: flex;
+    align-items: center;
+} 
+.menu-items li{
+    padding: 0.5rem 1rem;
+    transition: background 0.3s ease-in-out;
+}
+.menu-items li:hover{
+    background-color: orangered;
+}
+.dropdown{
+    position: relative;
+}
+
+
+.dropdown-menu,
+.menu-right{
+    position: absolute;
+    background: #122331;
+    width: 100%;
+    top: 50px;
+    left: 0;
+    opacity: 0;
+    visibility: hidden; 
+    transition: all 0.3s ease;
+}
+.menu-right{
+    top: 0;
+    left: 110%;
+}
+.menu-item{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.dropdown:hover .dropdown-menu{
+    top:34px;
+    opacity:1;
+    visibility: visible;
+    
+}
+.dropdown-right:hover .menu-right{
+    left: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+
+.mega-menu{
+    position: absolute;
+    left: 0;
+    width: 8vh;
+    top: 80px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    visibility: hidden;
+}.mega-menu.content{
+    background: #122331;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+    width: 100%;
+    justify-content: space-between;
+
+}
+.section{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.section h1{
+    font-family: "Titillium web",serif;
+    line-height: 6vh;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: yellow;
+}
+
+
+
+
+
